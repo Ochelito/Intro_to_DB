@@ -7,12 +7,27 @@ All SQL keywords should be in uppercase
 
 
 */
+/*USE alx_book_store;
+
+SELECT 
+COLUMN_NAME AS Field,
+COLUMN_TYPE as Type,
+IS_NULLABLE AS Null,
+COLUMN_KEY AS Key,
+COLUMN_DEFAULT AS Default,
+EXTRA AS Extra
+FROM 
+INFORMATION_SCHEMA.COLUMNS
+WHERE 
+TABLE_NAME = 'Books' AND TABLE_SCHEMA = 'alx_book_store';
+ORDER BY
+ORDINAL_POSITION;*/
+
 USE alx_book_store;
-
-SELECT COLUMN_NAME, COLUMN_TYPE, COLUMN_KEY, EXTRA
+SELECT COLUMN_NAME, COLUMN_TYPE
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'Books' AND TABLE_SCHEMA = 'alx_book_store';
-
+WHERE TABLE_SCHEMA='alx_book_store'
+AND TABLE_NAME='Books';
 
 --USE alx_book_store;
 
