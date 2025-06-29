@@ -2,7 +2,7 @@
 
 The name of the file should be task_3.sql
 The database name will be passed as argument of mysql command*/
-
+USE alx_book_store;
 SHOW TABLES;
 
 /*How to Run It from the Command Line
